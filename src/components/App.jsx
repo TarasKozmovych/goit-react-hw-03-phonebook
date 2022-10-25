@@ -24,7 +24,7 @@ export class App extends Component {
     }
   }
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(_, prevState) {
     const currentContacts = this.state.contacts;
     const prevContacts = prevState.contacts;
     if (prevContacts !== currentContacts) {
